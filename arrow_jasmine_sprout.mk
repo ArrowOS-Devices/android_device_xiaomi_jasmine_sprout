@@ -31,9 +31,9 @@ TARGET_VENDOR_PRODUCT_NAME := jasmine
 
 # Build Description
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.210905.001 7511028 release-keys" \
+    PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.210805.001.A1 7474174 release-keys" \
     PRODUCT_NAME="jasmine_sprout" \
     TARGET_DEVICE="jasmine_sprout"
 
 # Build Fingerprint
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys"
