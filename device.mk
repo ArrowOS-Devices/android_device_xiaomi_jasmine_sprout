@@ -46,9 +46,9 @@ PRODUCT_PACKAGES += \
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl:64 \
-    android.hardware.boot@1.0-impl.recovery \
-    android.hardware.boot@1.0-service \
+    android.hardware.boot@1.2-impl:64 \
+    android.hardware.boot@1.2-impl.recovery \
+    android.hardware.boot@1.2-service \
     bootctrl.sdm660 \
     bootctrl.sdm660.recovery
 
