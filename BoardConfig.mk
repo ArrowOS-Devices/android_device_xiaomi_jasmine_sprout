@@ -28,7 +28,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2021-07-01
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Inherit the proprietary files
 include vendor/xiaomi/jasmine_sprout/BoardConfigVendor.mk
