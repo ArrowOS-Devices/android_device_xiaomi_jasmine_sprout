@@ -8,7 +8,7 @@
       "target_path":"vendor/xiaomi/jasmine_sprout"
    },
    {
-      "repository":"hardware_xiaomi",
+      "repository":"android_hardware_xiaomi",
       "target_path":"hardware/xiaomi"
    }
 ]
