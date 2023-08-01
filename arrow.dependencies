@@ -1,10 +1,10 @@
 [
    {
-      "repository":"kernel_xiaomi_jasmine_sprout",
+      "repository":"android_kernel_xiaomi_jasmine_sprout",
       "target_path":"kernel/xiaomi/jasmine_sprout"
    },
    {
-      "repository":"vendor_xiaomi_jasmine_sprout",
+      "repository":"android_vendor_xiaomi_jasmine_sprout",
       "target_path":"vendor/xiaomi/jasmine_sprout"
    },
    {
