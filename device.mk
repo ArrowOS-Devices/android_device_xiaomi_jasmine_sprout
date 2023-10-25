@@ -280,6 +280,13 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.drm@1.4.vendor
 
+# Extphone Lib
+PRODUCT_PACKAGES += \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
@@ -515,7 +522,13 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
    libtflite \
-   libtextclassifier_hash
+   libtextclassifier_hash \
+   vendor.qti.hardware.servicetracker@1.2.vendor
+
+# Boot Jars
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
 
 # Protobuf
 PRODUCT_PACKAGES += \
@@ -544,6 +557,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
+    libavservices_minijail \
     libavservices_minijail.vendor \
     libjson \
     libprotobuf-cpp-full \
@@ -580,11 +594,6 @@ PRODUCT_PACKAGES += \
 # Sqlite
 PRODUCT_PACKAGES += \
     sqlite3
-
-# Task profiles
-PRODUCT_COPY_FILES += \
-    system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
-    system/core/libprocessgroup/profiles/task_profiles_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -640,7 +649,7 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf \
-    android.hardware.wifi.hostapd@1.0.vendor
+    android.hardware.wifi.hostapd@1.3.vendor
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
