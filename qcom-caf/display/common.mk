@@ -68,10 +68,6 @@ ifeq ($(TARGET_USES_GRALLOC1), true)
     common_flags += -DUSE_GRALLOC1
 endif
 
-ifneq ($(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE),false)
-    common_flags += -DGRALLOC_HANDLE_HAS_RESERVED_SIZE
-endif
-
 #Common libraries external to display HAL
 common_libs := liblog libutils libcutils libhardware
 common_deps  :=
@@ -81,7 +77,7 @@ ifeq ($(TARGET_COMPILE_WITH_MSM_KERNEL),true)
 # This check is to pick the kernel headers from the right location.
 # If the macro above is defined, we make the assumption that we have the kernel
 # available in the build tree.
-# If the macro is not present, the headers are picked from hardware/qcom/msmXXXX
+# If the macro is not present, the headers are picked from device/xiaomi/jasmine_sprout/qcom-caf/
 # failing which, they are picked from bionic.
     common_deps += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
     kernel_includes += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include

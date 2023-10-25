@@ -1168,7 +1168,7 @@ LOCAL_SRC_FILES:= \
         power_policy_launcher.cpp
 
 LOCAL_C_INCLUDES:= \
-        vendor/qcom/opensource/audio-hal/primary-hal/hal \
+        device/xiaomi/jasmine_sprout/qcom-caf/audio/hal \
         system/media/audio/include
 
 LOCAL_SHARED_LIBRARIES:= \
